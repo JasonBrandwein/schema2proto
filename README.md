@@ -6,6 +6,23 @@ This tool does 2 things:
 * Modifies existing proto files by adding, modifying and removing fields, messages etc. Also support for merging proto
   files using the same package
 
+### Requirments
+Probably working: Java 10 or greater
+working: Java 9, and Zulu 1.8
+
+	Zulu info:
+	openjdk version "1.8.0_322"
+	OpenJDK Runtime Environment (Zulu 8.60.0.21-CA-win64) (build 1.8.0_322-b06)
+	OpenJDK 64-Bit Server VM (Zulu 8.60.0.21-CA-win64) (build 25.322-b06, mixed mode)
+
+### How to Build
+	Have maven 3.0 or > installed.
+	Go to schema2proto\schema2proto-lib
+	open terminal to that location
+	in terminal type:
+	mvn install -DskipTests
+	once the build is completed. Inside the target folder should be the .jar file that is needed to run xsd2proto commands.
+
 ## Usage
 
 ### Standalone (Only for converting XSD to PROTO)
