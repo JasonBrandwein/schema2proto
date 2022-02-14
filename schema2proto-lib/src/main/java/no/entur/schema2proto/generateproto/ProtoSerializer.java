@@ -139,7 +139,7 @@ public class ProtoSerializer {
 		removeUnwantedFields(packageToProtoFileMap);
 
 		// Uppercase message names
-		uppercaseMessageNames(packageToProtoFileMap);
+		// uppercaseMessageNames(packageToProtoFileMap);
 
 		// Add options specified in config file
 		addConfigurationSpecifiedOptions(packageToProtoFileMap);
