@@ -626,9 +626,9 @@ public class ProtoSerializer {
 			}
 			ec.updateName(enumValuePrefix + enumValue);
 		}
-		EnumConstant unspecified = new EnumConstant(new Location("", "", 0, 0), enumValuePrefix + "UNSPECIFIED", 0, "Default",
-				new Options(Options.ENUM_VALUE_OPTIONS, optionElementsUnspecified));
-		e.constants().add(0, unspecified);
+		// EnumConstant unspecified = new EnumConstant(new Location("", "", 0, 0), enumValuePrefix + "UNSPECIFIED", 0, "Default",
+		// new Options(Options.ENUM_VALUE_OPTIONS, optionElementsUnspecified));
+		// e.constants().add(0, unspecified);
 
 	}
 
