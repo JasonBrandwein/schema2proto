@@ -1074,7 +1074,8 @@ public class SchemaParser implements ErrorHandler {
 
 				if (!addedValues.contains(enumValue)) {
 					addedValues.add(enumValue);
-					constants.add(new EnumConstant(location, enumValue, counter++, doc, new Options(Options.ENUM_VALUE_OPTIONS, optionElements)));
+					constants.add(new EnumConstant(location, enumValue, (counter - 1), doc, new Options(Options.ENUM_VALUE_OPTIONS, optionElements)));
+					counter++;
 				}
 			}
 
